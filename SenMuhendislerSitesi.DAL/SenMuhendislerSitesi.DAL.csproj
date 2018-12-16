@@ -1,0 +1,94 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{847CA2C0-DFEA-4210-BF58-EEA59AF06D47}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SenMuhendislerSitesi.DAL</RootNamespace>
+    <AssemblyName>SenMuhendislerSitesi.DAL</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Context\ApplicationContext.cs" />
+    <Compile Include="Mappings\AdresMap.cs" />
+    <Compile Include="Mappings\AidatMap.cs" />
+    <Compile Include="Mappings\BaseMap.cs" />
+    <Compile Include="Mappings\ApartmanMap.cs" />
+    <Compile Include="Mappings\DaireMap.cs" />
+    <Compile Include="Mappings\DuyuruMap,.cs" />
+    <Compile Include="Mappings\GaleriMap.cs" />
+    <Compile Include="Mappings\GecmisYonetimKuruluMap.cs" />
+    <Compile Include="Mappings\GuncelYonetimKuruluMap.cs" />
+    <Compile Include="Mappings\HakkimizdaMap.cs" />
+    <Compile Include="Mappings\IletisimMap.cs" />
+    <Compile Include="Mappings\KisiMap.cs" />
+    <Compile Include="Mappings\YonetimKuruluMap.cs" />
+    <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Models\Adres.cs" />
+    <Compile Include="Models\Aidat.cs" />
+    <Compile Include="Models\Apartman.cs" />
+    <Compile Include="Models\BaseModel.cs" />
+    <Compile Include="Models\Daire.cs" />
+    <Compile Include="Models\Galeri.cs" />
+    <Compile Include="Models\GecmisYonetimKurulu.cs" />
+    <Compile Include="Models\GuncelYonetimKurulu.cs" />
+    <Compile Include="Models\Hakkimizda.cs" />
+    <Compile Include="Models\Kisi.cs" />
+    <Compile Include="Models\Duyuru.cs" />
+    <Compile Include="Models\Iletisim.cs" />
+    <Compile Include="Models\YonetimKurulu.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repository\Repository.cs" />
+    <Compile Include="UnitOfWork\UnitOfWork.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SenMuhendislerSitesi.Domain\SenMuhendislerSitesi.Domain.csproj">
+      <Project>{4B2BCFA5-A983-4C31-BC98-55F026C0F1C0}</Project>
+      <Name>SenMuhendislerSitesi.Domain</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

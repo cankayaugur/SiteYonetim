@@ -1,0 +1,13 @@
+C:\Users\ugurcan\Documents\Visual Studio 2017\Projects\SenMuhendislerSitesi\SenMuhendislerSitesi.DAL\bin\Debug\SenMuhendislerSitesi.DAL.dll.config
+C:\Users\ugurcan\Documents\Visual Studio 2017\Projects\SenMuhendislerSitesi\SenMuhendislerSitesi.DAL\bin\Debug\SenMuhendislerSitesi.DAL.dll
+C:\Users\ugurcan\Documents\Visual Studio 2017\Projects\SenMuhendislerSitesi\SenMuhendislerSitesi.DAL\bin\Debug\SenMuhendislerSitesi.DAL.pdb
+C:\Users\ugurcan\Documents\Visual Studio 2017\Projects\SenMuhendislerSitesi\SenMuhendislerSitesi.DAL\bin\Debug\EntityFramework.dll
+C:\Users\ugurcan\Documents\Visual Studio 2017\Projects\SenMuhendislerSitesi\SenMuhendislerSitesi.DAL\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\ugurcan\Documents\Visual Studio 2017\Projects\SenMuhendislerSitesi\SenMuhendislerSitesi.DAL\bin\Debug\SenMuhendislerSitesi.Domain.dll
+C:\Users\ugurcan\Documents\Visual Studio 2017\Projects\SenMuhendislerSitesi\SenMuhendislerSitesi.DAL\bin\Debug\SenMuhendislerSitesi.Domain.pdb
+C:\Users\ugurcan\Documents\Visual Studio 2017\Projects\SenMuhendislerSitesi\SenMuhendislerSitesi.DAL\bin\Debug\EntityFramework.xml
+C:\Users\ugurcan\Documents\Visual Studio 2017\Projects\SenMuhendislerSitesi\SenMuhendislerSitesi.DAL\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\ugurcan\Documents\Visual Studio 2017\Projects\SenMuhendislerSitesi\SenMuhendislerSitesi.DAL\obj\Debug\SenMuhendislerSitesi.DAL.csprojResolveAssemblyReference.cache
+C:\Users\ugurcan\Documents\Visual Studio 2017\Projects\SenMuhendislerSitesi\SenMuhendislerSitesi.DAL\obj\Debug\SenMuhendislerSitesi.DAL.csproj.CoreCompileInputs.cache
+C:\Users\ugurcan\Documents\Visual Studio 2017\Projects\SenMuhendislerSitesi\SenMuhendislerSitesi.DAL\obj\Debug\SenMuhendislerSitesi.DAL.dll
+C:\Users\ugurcan\Documents\Visual Studio 2017\Projects\SenMuhendislerSitesi\SenMuhendislerSitesi.DAL\obj\Debug\SenMuhendislerSitesi.DAL.pdb

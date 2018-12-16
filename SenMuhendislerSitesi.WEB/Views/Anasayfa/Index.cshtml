@@ -1,0 +1,161 @@
+﻿@using SenMuhendislerSitesi.Domain.Globals
+@{ 
+    var acvm = ViewBag.AnasayfaCompositeViewModel;
+}
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-12">
+            <section class="heading-slider" data-interval="6000">
+                @foreach (var item in acvm.Duyurular)
+                {
+
+                    <div class="heading-slider-single-slide">
+                        <img src="@Globals.DuyuruResim/@item.FotografUrl" title="@item.Baslik" alt="@item.Baslik" />
+                        <div class="heading-slider-single-slide-content">
+                            <h1>@item.Baslik</h1>
+                            <h3>@item.AltBaslik</h3>
+                        </div>
+                        <div class="promotion">
+                            <span class="promotion-value">Yönetim</span>
+                            <span class="promotion-description">@item.OlusturulmaTarihi</span>
+                        </div>
+                    </div>
+                }
+
+            </section>
+        </div>
+    </div>
+</div>
+<br />
+<br />
+<br />
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-12">
+            <section class="location-details">
+                <span class="location-details-map-marker" data-lat="34.061606" data-lng="-118.277556" data-type="marker"></span>
+                <span class="location-details-map-marker" data-lat="34.060382" data-lng="-118.279573" data-type="school"></span>
+                <span class="location-details-map-marker" data-lat="34.061134" data-lng="-118.280391" data-type="school"></span>
+                <span class="location-details-map-marker" data-lat="34.062741" data-lng="-118.280651" data-type="mall"></span>
+                <span class="location-details-map-marker" data-lat="34.061485" data-lng="-118.280075" data-type="store"></span>
+                <span class="location-details-map-marker" data-lat="34.060245" data-lng="-118.275300" data-type="store"></span>
+                <span class="location-details-map-marker" data-lat="34.062687" data-lng="-118.274528" data-type="store"></span>
+                <span class="location-details-map-marker" data-lat="34.061311" data-lng="-118.273546" data-type="gas_station"></span>
+                <span class="location-details-map-marker" data-lat="34.060495" data-lng="-118.276728" data-type="bus_stop"></span>
+                <span class="location-details-map-marker" data-lat="34.060982" data-lng="-118.278342" data-type="bus_stop"></span>
+                <span class="location-details-map-marker" data-lat="34.062727" data-lng="-118.272674" data-type="bus_stop"></span>
+                <div class="location-details-map" data-lat="34.061606" data-lng="-118.277556" data-zoom-level="17">
+                </div>
+                <div class="location-details-description">
+                    <div class="padding">
+                        <div class="description">
+                            <h2>Adres</h2>
+                            <h3>@acvm.Adresler.Mahalle</h3>
+                            <p><strong>@acvm.Adresler.AcikAdres</strong></p>
+                        </div>
+                        <div class="label">
+                            <div class="label-left">
+                                <div class="label-element"><i class="fa fa-book"></i>@acvm.Adresler.Okul</div>
+                                <div class="label-element"><i class="martanian-icon-gasoline"></i>@acvm.Adresler.Benzinlik </div>
+                                <div class="label-element"><i class="fa fa-bus"></i>@acvm.Adresler.OtobusDuragi</div>
+                            </div>
+                            <div class="label-right">
+                                <div style="margin-left:25px;">
+                                    <div class="label-element"><i class="fa fa-shopping-bag"></i>@acvm.Adresler.Carsi</div>
+                                    <div class="label-element"><i class="fa fa-shopping-cart"></i>@acvm.Adresler.Avm</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="clear">
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <section class="gallery">
+                <h2>GALERİ</h2>
+                <ul class="gallery-filters">
+                    <li class="filter filter-active" data-filter="*">Hepsi</li>
+                    <li class="filter" data-filter=".gallery-filter-building">Binalar</li>
+                    <li class="filter" data-filter=".gallery-filter-interior">Bahçemiz</li>
+                    <li class="filter" data-filter=".gallery-filter-decor">Park Alanı</li>
+                    <li class="filter" data-filter=".gallery-filter-dining">Otopark</li>
+                    <li class="filter" data-filter=".gallery-filter-living">İç Kısım</li>
+                </ul>
+
+
+                <div class="gallery-images">
+                    <div class="gallery-single-image gallery-filter-interior gallery-filter-living">
+                        <img src="/assets/_assets/_img/senmuh.png" class="image-data-for-parent" alt="Spacious living room with white sofa" />
+                    </div>
+                    <div class="gallery-single-image gallery-filter-interior gallery-filter-living">
+                        <img src="/assets/_assets/_img/senmuh.png" class="image-data-for-parent" alt="Beautiful living room in contemporary apartment" />
+                    </div>
+                    <div class="gallery-single-image gallery-filter-building">
+                        <img src="/assets/_assets/_img/senmuh.png" class="image-data-for-parent" alt="Modern house with swimming pool" />
+                    </div>
+                    <div class="gallery-single-image gallery-filter-interior gallery-filter-decor gallery-filter-living gallery-filter-dining">
+                        <img src="/assets/_assets/_img/senmuh.png" class="image-data-for-parent" alt="Luxurious and spacious interior of residence" />
+                    </div>
+                    <div class="gallery-single-image gallery-filter-interior gallery-filter-living">
+                        <img src="/assets/_assets/_img/senmuh.png" class="image-data-for-parent" alt="White bedroom in contemporary apartment" />
+                    </div>
+                    <div class="gallery-single-image gallery-filter-decor gallery-filter-living">
+                        <img src="/assets/_assets/_img/senmuh.png" class="image-data-for-parent" alt="Spacious and tasteful room" />
+                    </div>
+                    <div class="gallery-single-image gallery-filter-interior gallery-filter-decor gallery-filter-living gallery-filter-dining">
+                        <img src="/assets/_assets/_img/senmuh.png" class="image-data-for-parent" alt="Room in the apartment" />
+                    </div>
+                    <div class="gallery-single-image gallery-filter-building gallery-filter-living gallery-filter-dining">
+                        <img src="/assets/_assets/_img/logo.png" class="image-data-for-parent" alt="Spacious living room" />
+                    </div>
+                    <div class="gallery-single-image gallery-filter-interior gallery-filter-decor gallery-filter-living gallery-filter-dining">
+                        <img src="/assets/_assets/_img/logo.png" class="image-data-for-parent" alt="Spacious contemporary living room" />
+                    </div>
+                    <div class="gallery-single-image gallery-filter-interior gallery-filter-building gallery-filter-decor">
+                        <img src="/assets/_assets/_img/logo.png" class="image-data-for-parent" alt="Luxurious and spacious living room" />
+                    </div>
+                    <div class="gallery-single-image gallery-filter-interior gallery-filter-building">
+                        <img src="/assets/_assets/_img/logo.png" class="image-data-for-parent" alt="Swimming pool in modern house" />
+                    </div>
+                    <div class="gallery-single-image gallery-filter-decor">
+                        <img src="/assets/_assets/_img/logo.png" class="image-data-for-parent" alt="Place s you can relax" />
+                    </div>
+                    <div class="gallery-single-image gallery-filter-decor">
+                        <img src="/assets/_assets/_img/logo.png" class="image-data-for-parent" alt="Place d you can relax" />
+                    </div>
+                    <div class="gallery-single-image gallery-filter-decor">
+                        <img src="/assets/_assets/_img/logo.png" class="image-data-for-parent" alt="Place f you can relax" />
+                    </div>
+                    <div class="gallery-single-image gallery-filter-decor">
+                        <img src="/assets/_assets/_img/logo.png" class="image-data-for-parent" alt="Place g you can relax" />
+                    </div>
+                    <div class="gallery-single-image gallery-filter-decor">
+                        <img src="/assets/_assets/_img/logo.png" class="image-data-for-parent" alt="Place h you can relax" />
+                    </div>
+                    <div class="gallery-single-image gallery-filter-decor">
+                        <img src="/assets/_assets/_img/logo.png" class="image-data-for-parent" alt="Place h you can relax" />
+                    </div>
+                    <div class="gallery-single-image gallery-filter-decor">
+                        <img src="/assets/_assets/_img/logo.png" class="image-data-for-parent" alt="Place h you can relax" />
+                    </div>
+                    <div class="gallery-single-image gallery-filter-decor">
+                        <img src="/assets/_assets/_img/logo.png" class="image-data-for-parent" alt="Place h you can relax" />
+                    </div>
+                    <div class="gallery-single-image gallery-filter-decor">
+                        <img src="/assets/_assets/_img/logo.png" class="image-data-for-parent" alt="Place h you can relax" />
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+</div>
+
+
+

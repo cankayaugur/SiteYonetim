@@ -1,0 +1,6 @@
+C:\Users\ugurcan\Documents\Visual Studio 2017\Projects\SenMuhendislerSitesi\SenMuhendislerSitesi.Domain\bin\Debug\SenMuhendislerSitesi.Domain.dll
+C:\Users\ugurcan\Documents\Visual Studio 2017\Projects\SenMuhendislerSitesi\SenMuhendislerSitesi.Domain\bin\Debug\SenMuhendislerSitesi.Domain.pdb
+C:\Users\ugurcan\Documents\Visual Studio 2017\Projects\SenMuhendislerSitesi\SenMuhendislerSitesi.Domain\obj\Debug\SenMuhendislerSitesi.Domain.csproj.CoreCompileInputs.cache
+C:\Users\ugurcan\Documents\Visual Studio 2017\Projects\SenMuhendislerSitesi\SenMuhendislerSitesi.Domain\obj\Debug\SenMuhendislerSitesi.Domain.dll
+C:\Users\ugurcan\Documents\Visual Studio 2017\Projects\SenMuhendislerSitesi\SenMuhendislerSitesi.Domain\obj\Debug\SenMuhendislerSitesi.Domain.pdb
+C:\Users\ugurcan\Documents\Visual Studio 2017\Projects\SenMuhendislerSitesi\SenMuhendislerSitesi.Domain\obj\Debug\SenMuhendislerSitesi.Domain.csprojResolveAssemblyReference.cache

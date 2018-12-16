@@ -1,0 +1,18 @@
+﻿@using SenMuhendislerSitesi.Domain.ViewModels.SiteViewModels
+@model List<GecmisYonetimKuruluViewModel>
+
+
+<div style="margin-left:250px;">
+    <div class="row">
+        @foreach (var item in Model.ToList())
+        {
+
+            <h1>@item.Ad</h1>
+            <h1>@item.Soyad</h1>
+            <h1>@item.Unvan</h1>
+            <h1>@item.GorevSuresi</h1>
+        }
+
+
+    </div>
+    </div>

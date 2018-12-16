@@ -1,0 +1,112 @@
+﻿@using SenMuhendislerSitesi.Domain.ViewModels.SiteViewModels
+@model AdresViewModel
+
+<div class="row wrapper border-bottom white-bg page-heading">
+    <div class="col-lg-10">
+        <br />
+        <ol class="breadcrumb">
+            <li>
+                <a href="/ssadmin/Anasayfa">Anasayfa</a>
+            </li>
+
+            <li class="active">
+                <strong>Duyuru Ekle</strong>
+            </li>
+        </ol>
+    </div>
+    <div class="col-lg-2">
+
+    </div>
+</div>
+<div class="wrapper wrapper-content animated fadeInRight">
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="ibox float-e-margins">
+                <div class="ibox-title">
+                    <h5> <small></small></h5>
+                    <div class="ibox-tools">
+
+
+
+
+                    </div>
+                </div>
+                <div class="ibox-content">
+                    @using (Html.BeginForm("Kaydet", "Adres", FormMethod.Post, new { @class = "form-horizontal", enctype = "multipart/form-data" }))
+    {
+                @Html.HiddenFor(x => x.Id)
+                <div class="form-group">
+                    @Html.LabelFor(x => x.Durum, new { @class = "col-sm-2 control-label" })
+
+                    <div class="col-sm-10">
+                        <div class="i-checks"><label> @Html.CheckBoxFor(x => x.Durum) <i></i></label></div>
+                    </div>
+                </div>
+
+                <div class="hr-line-dashed"></div>
+                <div class="form-group">
+                    @Html.LabelFor(x => x.AcikAdres, new { @class = "col-sm-2 control-label" })
+                    <div class="col-sm-10">
+                        @Html.TextBoxFor(x => x.AcikAdres, new { @class = "form-control", placeholder = "Açık adres giriniz..", required = "required" })
+                    </div>
+                </div>
+
+                <div class="hr-line-dashed"></div>
+                <div class="form-group">
+                    @Html.LabelFor(x => x.Mahalle, new { @class = "col-sm-2 control-label" })
+                    <div class="col-sm-10">
+                        @Html.TextBoxFor(x => x.Mahalle, new { @class = "form-control", placeholder = "Mahalle giriniz..", required = "required" })
+                    </div>
+                </div>
+
+                <div class="hr-line-dashed"></div>
+                <div class="form-group">
+                    @Html.LabelFor(x => x.Okul, new { @class = "col-sm-2 control-label" })
+                    <div class="col-sm-10">
+                        @Html.TextAreaFor(x => x.Okul, new { @class = "form-control", required = "required" })
+                    </div>
+                </div>
+
+                <div class="hr-line-dashed"></div>
+                <div class="form-group">
+                    @Html.LabelFor(x => x.Carsi, new { @class = "col-sm-2 control-label" })
+                    <div class="col-sm-10">
+                        @Html.TextBoxFor(x => x.Carsi, new { @class = "form-control", placeholder = "Çarşı giriniz..", required = "required" })
+                    </div>
+                </div>
+
+                <div class="hr-line-dashed"></div>
+                <div class="form-group">
+                    @Html.LabelFor(x => x.Benzinlik, new { @class = "col-sm-2 control-label" })
+                    <div class="col-sm-10">
+                        @Html.TextBoxFor(x => x.Benzinlik, new { @class = "form-control", placeholder = "Benzinlik giriniz..", required = "required" })
+                    </div>
+                </div>
+
+                <div class="hr-line-dashed"></div>
+                <div class="form-group">
+                    @Html.LabelFor(x => x.Avm, new { @class = "col-sm-2 control-label" })
+                    <div class="col-sm-10">
+                        @Html.TextBoxFor(x => x.Avm, new { @class = "form-control", placeholder = "Avm giriniz..", required = "required" })
+                    </div>
+                </div>
+
+                <div class="hr-line-dashed"></div>
+                <div class="form-group">
+                    @Html.LabelFor(x => x.OtobusDuragi, new { @class = "col-sm-2 control-label" })
+                    <div class="col-sm-10">
+                        @Html.TextBoxFor(x => x.OtobusDuragi, new { @class = "form-control", placeholder = "Otobüs Durağı giriniz..", required = "required" })
+                    </div>
+                </div>
+                <div class="hr-line-dashed"></div>
+                <div class="form-group">
+                    <div class="col-sm-4 col-sm-offset-2">
+                        <button class="btn btn-primary" type="submit">Kaydet</button>
+                    </div>
+                </div>
+}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

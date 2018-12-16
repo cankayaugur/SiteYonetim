@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{4B2BCFA5-A983-4C31-BC98-55F026C0F1C0}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SenMuhendislerSitesi.Domain</RootNamespace>
+    <AssemblyName>SenMuhendislerSitesi.Domain</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DTOS\SlimDto.cs" />
+    <Compile Include="Enums\Bina.cs" />
+    <Compile Include="Enums\Unvan.cs" />
+    <Compile Include="Globals\Globals.cs" />
+    <Compile Include="Methods\FileUpload.cs" />
+    <Compile Include="Methods\ImageHelper.cs" />
+    <Compile Include="Methods\StringMethods.cs" />
+    <Compile Include="ViewModels\AdminViewModels\AidatViewModel.cs" />
+    <Compile Include="ViewModels\AdminViewModels\ApartmanViewModel.cs" />
+    <Compile Include="ViewModels\AdminViewModels\DaireViewModel.cs" />
+    <Compile Include="ViewModels\AdminViewModels\DuyuruViewModel.cs" />
+    <Compile Include="ViewModels\AdminViewModels\GaleriViewModel.cs" />
+    <Compile Include="ViewModels\AdminViewModels\GecmisYonetimKuruluViewModel.cs" />
+    <Compile Include="ViewModels\AdminViewModels\GuncelYonetimKuruluViewModel.cs" />
+    <Compile Include="ViewModels\AdminViewModels\HakkimizdaViewModel.cs" />
+    <Compile Include="ViewModels\AdminViewModels\KisiViewModel.cs" />
+    <Compile Include="ViewModels\AdminViewModels\YonetimKuruluViewModel.cs" />
+    <Compile Include="ViewModels\BaseViewModel.cs" />
+    <Compile Include="Enums\Cinsiyet.cs" />
+    <Compile Include="Enums\KisiTur.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ViewModels\SiteViewModels\AdresViewModel.cs" />
+    <Compile Include="ViewModels\SiteViewModels\AnasayfaViewModel.cs" />
+    <Compile Include="ViewModels\SiteViewModels\ApartmanViewModel.cs" />
+    <Compile Include="ViewModels\SiteViewModels\DaireViewModel.cs" />
+    <Compile Include="ViewModels\SiteViewModels\DuyuruViewModel.cs" />
+    <Compile Include="ViewModels\SiteViewModels\GaleriViewModel.cs" />
+    <Compile Include="ViewModels\SiteViewModels\GecmisYonetimKuruluViewModel.cs" />
+    <Compile Include="ViewModels\SiteViewModels\GuncelYonetimKuruluViewModel.cs" />
+    <Compile Include="ViewModels\SiteViewModels\HakkimizdaViewModel.cs" />
+    <Compile Include="ViewModels\SiteViewModels\IletisimViewModel.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

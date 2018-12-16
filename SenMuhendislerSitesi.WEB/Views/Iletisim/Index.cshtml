@@ -1,0 +1,115 @@
+﻿<br /><br /><br />
+
+<div style="margin-left:200px;">
+    <div class="row">
+        <div class="col-md-12">
+            <section class="form">
+                <h2>İletişime Geçin!</h2>
+                <form method="post" class="form-active" data-title="New email from your website" data-client-name-field="Name" data-client-email-field="E-mail">
+                    <p class="left">
+                        <br />
+                        <input type="text" name="Name" placeholder="İsminiz..." class="form-field" />
+                        <input type="text" name="Phone" placeholder="Numaranız..." class="form-field" data-required="no" />
+                        <input type="email" name="E-mail" placeholder="E-mail..." class="form-field" />
+                        <input type="text" name="Subject" placeholder="Subject..." class="form-field" />
+                    </p>
+                    <p class="right">
+                        <br />
+                        <textarea name="message" rows="10" cols="5" placeholder="Mesajınız..." class="form-field"></textarea>
+                        <button type="button" class="button button-open-on-white form-send"><span>Mesaj Gönder</span></button>
+                    </p>
+                    <div class="thanks-lay">
+                        <div class="thanks-lay-helper">
+                        </div>
+                        <div class="thanks-lay-content">
+                            <div class="thanks-lay-content-sending">
+                                <div class="thanks-lay-icon"><i class="fa fa-cog fa-spin"></i></div>
+                                Sending...
+
+                            </div>
+                            <div class="thanks-lay-content-sent">
+                                <div class="thanks-lay-icon"><i class="fa fa-check"></i></div>
+                                Your message has been sent, thank you!
+
+                                <span class="thanks-lay-close">Close this notice</span>
+                            </div>
+                            <div class="thanks-lay-content-not-sent">
+                                <div class="thanks-lay-icon"><i class="fa fa-times"></i></div>
+                                Please try again.
+
+                                <span class="thanks-lay-close">Close this notice</span>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </section>
+        </div>
+    </div>
+</div>
+<section class="contact-box">
+    <i class="fa fa-phone"></i>
+    <h3>Telefon &amp; Fax</h3>
+    <p>0312 - 256 - 43 - 03<br /> 0312 - 256 - 43 - 03</p>
+</section>
+<section class="contact-box">
+    <i class="fa fa-phone"></i>
+    <h3>E-Mail</h3>
+    <p>onemli.ugurcan@gmail.com<br /> onemli.ugurcan@gmail.com</p>
+</section>
+<section class="contact-box">
+    <i class="fa fa-phone"></i>
+    <h3>Adres</h3>
+    <p>Ergazi Mahallesi <br /> Şen Mühendisler Sitesi 1821.Cadde</p>
+</section>
+
+@section script{
+        <script>
+            jQuery(document).ready(function () {
+                jQuery("#btnGonder").click(function () {
+                    var konu = jQuery("#konu").val();
+                    var telefon = jQuery("#telefon").val();
+                    var email = jQuery("#email").val();
+                    var mesaj = jQuery("#mesaj").val();
+
+                    if (konu != null && mesaj != null) {
+                        jQuery.ajax({
+                            type: "POST",
+                            url: "/iletisim/ekle",
+                            data: 'Konu=' + konu + '&Telefon=' + telefon + '&Eposta=' + email + '&Mesaj=' + mesaj,
+                            datatype: "post",
+                            success: function (donendeger) {
+                                if (donendeger) {
+                                    window.swal({
+                                        title: "Mesaj Gönderildi",
+                                        text: "Mesajınız iletilmiştir teşekkür ederiz.",
+                                        type: "success",
+                                        confirmButtonText: "Tamam",
+                                    });
+                                    TextAlanTemizle();
+                                }
+                                else {
+                                    window.swal({
+                                        title: "Bir hata oluştu",
+                                        text: donendeger.statusText,
+                                        type: "error",
+                                        confirmButtonText: "Tamam",
+                                    });
+                                    TextAlanTemizle();
+                                }
+                            }
+                        });
+                    }
+                });
+
+                function TextAlanTemizle() {
+                    jQuery("#konu").val('');
+                    jQuery("#telefon").val('');
+                    jQuery("#email").val('');
+                    jQuery("#mesaj").val('');
+                }
+
+
+            });
+
+        </script>
+    }

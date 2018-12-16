@@ -1,0 +1,38 @@
+﻿@using SenMuhendislerSitesi.Domain.ViewModels.SiteViewModels
+@model List<DuyuruViewModel>
+@foreach (var item in Model.Take(7).ToList())
+{
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <section class="heading-slider" data-interval="6000">
+
+
+                    <div class="heading-slider-single-slide">
+
+                        <div class="heading-slider-single-slide-content">
+
+                            <h1>@item.Baslik</h1>
+                            <h3>@item.AltBaslik</h3>
+                            <h5>@item.DuyuruTarihi</h5>
+                            <h4>@item.Icerik</h4>
+                            <a href="duyuru/@item.Url-@item.Id"></a>
+                        </div>
+                        <div class="promotion">
+                            <span class="promotion-value">Yönetim</span>
+                            <span class="promotion-description">@item.OlusturulmaTarihi</span>
+                        </div>
+
+                    </div>
+
+                </section>
+            </div>
+        </div>
+    </div>
+}
+<br />
+<br />
+<br />
+
+
+

@@ -1,0 +1,15 @@
+C:\Users\ugurcan\Documents\Visual Studio 2017\Projects\SenMuhendislerSitesi\SenMuhendislerSitesi.Services\bin\Debug\SenMuhendislerSitesi.Services.dll
+C:\Users\ugurcan\Documents\Visual Studio 2017\Projects\SenMuhendislerSitesi\SenMuhendislerSitesi.Services\bin\Debug\SenMuhendislerSitesi.Services.pdb
+C:\Users\ugurcan\Documents\Visual Studio 2017\Projects\SenMuhendislerSitesi\SenMuhendislerSitesi.Services\bin\Debug\SenMuhendislerSitesi.DAL.dll
+C:\Users\ugurcan\Documents\Visual Studio 2017\Projects\SenMuhendislerSitesi\SenMuhendislerSitesi.Services\bin\Debug\SenMuhendislerSitesi.Domain.dll
+C:\Users\ugurcan\Documents\Visual Studio 2017\Projects\SenMuhendislerSitesi\SenMuhendislerSitesi.Services\bin\Debug\EntityFramework.dll
+C:\Users\ugurcan\Documents\Visual Studio 2017\Projects\SenMuhendislerSitesi\SenMuhendislerSitesi.Services\bin\Debug\SenMuhendislerSitesi.DAL.pdb
+C:\Users\ugurcan\Documents\Visual Studio 2017\Projects\SenMuhendislerSitesi\SenMuhendislerSitesi.Services\bin\Debug\SenMuhendislerSitesi.DAL.dll.config
+C:\Users\ugurcan\Documents\Visual Studio 2017\Projects\SenMuhendislerSitesi\SenMuhendislerSitesi.Services\bin\Debug\SenMuhendislerSitesi.Domain.pdb
+C:\Users\ugurcan\Documents\Visual Studio 2017\Projects\SenMuhendislerSitesi\SenMuhendislerSitesi.Services\bin\Debug\EntityFramework.xml
+C:\Users\ugurcan\Documents\Visual Studio 2017\Projects\SenMuhendislerSitesi\SenMuhendislerSitesi.Services\obj\Debug\SenMuhendislerSitesi.Services.csprojResolveAssemblyReference.cache
+C:\Users\ugurcan\Documents\Visual Studio 2017\Projects\SenMuhendislerSitesi\SenMuhendislerSitesi.Services\obj\Debug\SenMuhendislerSitesi.Services.csproj.CoreCompileInputs.cache
+C:\Users\ugurcan\Documents\Visual Studio 2017\Projects\SenMuhendislerSitesi\SenMuhendislerSitesi.Services\obj\Debug\SenMuhendislerSitesi.Services.dll
+C:\Users\ugurcan\Documents\Visual Studio 2017\Projects\SenMuhendislerSitesi\SenMuhendislerSitesi.Services\obj\Debug\SenMuhendislerSitesi.Services.pdb
+C:\Users\ugurcan\Documents\Visual Studio 2017\Projects\SenMuhendislerSitesi\SenMuhendislerSitesi.Services\bin\Debug\Newtonsoft.Json.dll
+C:\Users\ugurcan\Documents\Visual Studio 2017\Projects\SenMuhendislerSitesi\SenMuhendislerSitesi.Services\bin\Debug\Newtonsoft.Json.xml

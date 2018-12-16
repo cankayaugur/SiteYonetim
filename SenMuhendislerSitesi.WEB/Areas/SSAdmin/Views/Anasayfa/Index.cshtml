@@ -1,0 +1,21 @@
+﻿@using SenMuhendislerSitesi.Domain.ViewModels.AdminViewModels
+@model KisiViewModel
+
+<br /><br /><br />
+
+
+
+<div class="ibox-content">
+    @using (Html.BeginForm("Kaydet", "Kisi", FormMethod.Post, new { @class = "form-horizontal", enctype = "multipart/form-data" }))
+    {
+
+
+        <div class="hr-line-dashed"></div>
+        <div class="form-group">
+            <div class="col-sm-10">
+                @Html.EnumDropDownListFor(x => x.Bina, new { @class = "form-control", placeholder = "Duyuru adı giriniz..", required = "required" })
+            </div>
+        </div>
+    }
+</div>
+

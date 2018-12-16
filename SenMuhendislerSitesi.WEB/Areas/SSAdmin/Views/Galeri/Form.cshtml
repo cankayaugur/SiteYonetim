@@ -1,0 +1,93 @@
+﻿@using SenMuhendislerSitesi.Domain.ViewModels.AdminViewModels
+@using SenMuhendislerSitesi.Domain.Globals;
+@model GaleriViewModel
+
+<div class="row wrapper border-bottom white-bg page-heading">
+    <div class="col-lg-10">
+        <br />
+        <ol class="breadcrumb">
+            <li>
+                <a href="@Url.Action("index","Galeri")">Anasayfa</a>
+            </li>
+
+            <li class="active">
+                <strong>Fotoğraf Ekle</strong>
+            </li>
+        </ol>
+    </div>
+    <div class="col-lg-2">
+
+    </div>
+</div>
+<div class="wrapper wrapper-content animated fadeInRight">
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="ibox float-e-margins">
+                <div class="ibox-title">
+                    <h5> <small></small></h5>
+                    <div class="ibox-tools">
+
+
+
+
+                    </div>
+                </div>
+                <div class="ibox-content">
+                    @using (Html.BeginForm("Kaydet", "Galeri", FormMethod.Post, new { @class = "form-horizontal", enctype = "multipart/form-data" }))
+                    {
+                        @Html.HiddenFor(x => x.Id)
+                        <div class="form-group">
+                            @Html.LabelFor(x => x.Durum, new { @class = "col-sm-2 control-label" })
+
+                            <div class="col-sm-10">
+                                <div class="i-checks"><label> @Html.CheckBoxFor(x => x.Durum) <i></i></label></div>
+                            </div>
+                        </div>
+
+                        <div class="hr-line-dashed"></div>
+                        <div class="form-group">
+                            @Html.LabelFor(x => x.Ad, new { @class = "col-sm-2 control-label" })
+                            <div class="col-sm-10">
+                                @Html.TextBoxFor(x => x.Ad, new { @class = "form-control", placeholder = "Fotoğraf adı giriniz..", required = "required" })
+                            </div>
+                        </div>
+
+                        <div class="hr-line-dashed"></div>
+                        <div class="form-group">
+                            <label class="control-label col-sm-2">Fotograf</label>
+                            <div class="col-sm-10">
+                                <div class="slim"
+                                     data-label="Resim seçmek için tıklayınız veya resmi bu alana sürükleyiniz"
+                                     data-button-edit-title="Düzenle"
+                                     data-button-remove-title="Sil"
+                                     data-button-download-title="İndir"
+                                     data-button-confirm-label="Tamam"
+                                     data-button-cancel-label="İptal"
+                                     data-max-file-size="1"
+                                     data-force-size="1558,966"
+                                     data-ratio="779:483"
+                                     data-instant-edit="true"
+                                     data-download="true">
+                                    <input type="file" name="@nameof(Model.Fotograf)" id="@nameof(Model.Fotograf)" />
+                                    @if (!string.IsNullOrWhiteSpace(Model.FotografUrl))
+                                    {
+                                        <img src="@Globals.DuyuruResim/@Model.FotografUrl" alt="" />
+                                    }
+                                </div>
+
+                            </div>
+                        </div>
+
+
+                        <div class="hr-line-dashed"></div>
+                        <div class="form-group">
+                            <div class="col-sm-4 col-sm-offset-2">
+                                <button class="btn btn-primary" type="submit">Kaydet</button>
+                            </div>
+                        </div>
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
